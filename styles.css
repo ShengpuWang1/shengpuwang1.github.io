@@ -3,3 +3,5 @@
 #resonance-detection figure img{max-height:600px}
 
 .project-copy{max-width:780px}.project{align-items:start}.project:not(.wide) figure{position:sticky;top:110px}#hybrid-quantum-learning figure img{max-height:480px}@media(max-width:800px){.project:not(.wide) figure{position:static}}
+
+#hybrid-quantum-learning .phase-result{width:min(100%,680px);margin:10px auto 0}#hybrid-quantum-learning .phase-result img{max-height:460px}
