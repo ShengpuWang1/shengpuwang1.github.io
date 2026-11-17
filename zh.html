@@ -62,7 +62,7 @@
 <section id="rydberg-eit" class="project wide" aria-labelledby="rydberg-eit-title"><div class="project-copy"><p class="project-number">项目 06</p><h3 id="rydberg-eit-title">里德堡 EIT 响应仿真</h3><p class="project-meta">苏黎世联邦理工学院 · 学期项目 · 2023 年 2—6 月</p>
 <p>电磁诱导透明（EIT）通过耦合原子跃迁，改变弱探测光穿过原子系综的响应。与系综相互作用的里德堡量子比特可以改变这一响应，为探测其存在提供光学信号。本学期项目构建数值工具，比较单独原子系综与耦合里德堡量子比特后的响应，并探索量子比特探测的测量条件。</p>
 <p>图中给出了物理模型：左侧的探测场与耦合场连接基态、中间态和里德堡能级；额外的里德堡态与交换相互作用使响应依赖于量子比特。右侧的哈密顿量描述耦合、失谐和相互作用，密度矩阵演化方程包含耗散项，透明度表达式则将仿真得到的原子相干性与可观测的光学信号联系起来。</p>
-<p>我实现了 Python 交互界面，使用户能够调整参数并比较三能级模型与有相互作用的四能级模型。在计算得到的 EIT 响应曲线上选择测量点后，用户可以查看模拟的光子分布。项目成果是将微观动力学模型与探测信号联系起来的探索性科学工具，并非实验上已实现读出性能的声明。</p>
+<p>我实现了 Python 交互界面，使用户能够调整参数并比较三能级模型与有相互作用的四能级模型。在计算得到的 EIT 响应曲线上选择测量点后，用户可以查看模拟的光子分布。</p>
 <p class="methods">数值建模 / 量子动力学 / 科学软件</p><div class="project-links"><a href="https://github.com/ShengpuWang1/EIT-Calculator">GitHub <span aria-hidden="true">↗</span></a></div></div>
 <figure><a href="rydberg-eit.png" aria-label="查看项目原图"><img src="rydberg-eit.png" width="2192" height="830" loading="lazy" decoding="async" alt="里德堡能级及其耦合、系统哈密顿量与透明度表达式。"></a><figcaption>计算里德堡 EIT 响应所用的能级模型与动力学方程。 <a href="rydberg-eit.png">查看原图 ↗</a></figcaption>
 </figure>
@@ -70,7 +70,7 @@
 <section id="flight-radar" class="project wide" aria-labelledby="flight-radar-title"><div class="project-copy"><p class="project-number">项目 07</p><h3 id="flight-radar-title">软件无线电航班雷达</h3><p class="project-meta">独立工程项目</p>
 <p>本独立项目将接收到的飞机无线电信号转化为可读的航班信息和地理显示。目标是建立连接无线电接收、数字信号处理、报文解码与可视化的完整系统，直接处理接收到的信号。</p>
 <p>图中展示了接收、解码环节及系统生成的地图示例。1090 MHz 带通滤波器选择目标频段，下变频环节将信号转换为适合数字处理的形式。软件随后恢复并解码报文，提取呼号、高度、速度和坐标等记录。地图截图展示了如何将解码结果转换为用户可以查看的空间信息。</p>
-<p>代码仓库包含接收与 IQ 转换代码、解码逻辑、运行脚本和生成的地图示例。主要成果是实现了从采集的无线电样本到可理解航班记录和地图位置的完整链路。网页图片为已记录的输出示例，并非实时航班信息流；项目展示了硬件、信号分析与软件展示之间的集成能力。</p>
+<p>代码仓库包含接收与 IQ 转换代码、解码逻辑、运行脚本和生成的地图示例。主要成果是实现了从采集的无线电样本到可理解航班记录和地图位置的完整链路。</p>
 <p class="methods">信号处理 / Python / GNU Radio</p><div class="project-links"><a href="https://github.com/ShengpuWang1/flight-radar">GitHub <span aria-hidden="true">↗</span></a></div></div>
 <figure><a href="flight-radar.webp" aria-label="查看项目原图"><img src="flight-radar.webp" width="3694" height="1708" loading="lazy" decoding="async" alt="飞机信号接收与解码环节，以及解码结果的地图显示。"></a><figcaption>飞机信号接收、解码链路及地图输出示例。 <a href="flight-radar.webp">查看原图 ↗</a></figcaption>
 </figure>
