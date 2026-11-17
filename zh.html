@@ -37,10 +37,10 @@
 </section>
 <section id="signal-chain-simulation" class="project " aria-labelledby="signal-chain-simulation-title"><div class="project-copy"><p class="project-number">项目 03</p><h3 id="signal-chain-simulation-title">信号链仿真与预补偿</h3><p class="project-meta">苏黎世仪器（Zurich Instruments AG） · 实习 · 2023 年 10 月—2024 年 3 月</p>
 <p>量子控制电子设备需要输出精确的脉冲，但更高的数字精度与额外校正环节也会消耗硬件资源。本次实习研究了器件的非理想特性如何沿控制信号链传播，以及它们如何影响量子比特操作的保真度。我建立了结合脉冲生成、LTspice 模拟电路仿真与量子比特动力学的数值模型，并开展脉冲参数优化以及噪声、失真分析。</p>
-<p>图中展示了一项具体的工程取舍：简化用于预补偿的有限冲激响应（FIR）滤波器。预补偿通过修改输出波形，抵消后续模拟信号链造成的失真。横轴为滤波器系数的索引，纵轴为系数值。蓝点表示全分辨率的 36 抽头滤波器；红点表示一种 20 抽头方案，其部分区间采用较低的时间分辨率；绿色虚线标出了分辨率区间。</p>
-<p>滤波器核尾部的系数较小、变化较慢，因此适合采用较低分辨率处理。在对应的仿真比较中，两种预补偿方案都提高了受失真影响的 iSWAP 门的保真度，且两者的不保真度接近。结果支持在保持所建模型中控制质量的同时降低滤波器复杂度，也提供了在修改硬件前评估资源与精度取舍的方法。</p>
+<p>图中展示了一项具体的工程取舍：简化用于预补偿的有限冲激响应（FIR）滤波器。预补偿通过修改输出波形，抵消后续模拟信号链造成的失真。横轴为滤波器系数的索引，纵轴为系数值。蓝点表示全分辨率的 36 tap滤波器；红点表示一种 20 tap方案，其部分区间采用较低的时间分辨率；绿色虚线标出了分辨率区间。</p>
+<p>滤波器 kernel 尾部的系数较小、变化较慢，因此适合采用较低分辨率处理。在对应的仿真比较中，两种预补偿方案都提高了受失真影响的 iSWAP 门的保真度，且两者的不保真度接近。结果支持在保持所建模型中控制质量的同时降低滤波器复杂度，也提供了在修改硬件前评估资源与精度取舍的方法。</p>
 <p class="methods">数值仿真 / 信号处理 / 优化</p><div class="project-links"></div></div>
-<figure><a href="fir-filter-comparison.png" aria-label="查看项目原图"><img src="fir-filter-comparison.png" width="608" height="462" loading="lazy" decoding="async" alt="36 抽头全分辨率与 20 抽头部分低分辨率 FIR 滤波器系数比较。"></a><figcaption>全分辨率与降低分辨率的 FIR 滤波器核。苏黎世仪器实习汇报第 22 页。 <a href="fir-filter-comparison.png">查看原图 ↗</a></figcaption>
+<figure><a href="fir-filter-comparison.png" aria-label="查看项目原图"><img src="fir-filter-comparison.png" width="608" height="462" loading="lazy" decoding="async" alt="36 tap全分辨率与 20 tap部分低分辨率 FIR 滤波器系数比较。"></a><figcaption>全分辨率与降低分辨率的 FIR 滤波器 kernel。苏黎世仪器实习汇报第 22 页。 <a href="fir-filter-comparison.png">查看原图 ↗</a></figcaption>
 </figure>
 </section>
 <section id="readout-pulse-optimization" class="project wide" aria-labelledby="readout-pulse-optimization-title"><div class="project-copy"><p class="project-number">项目 04</p><h3 id="readout-pulse-optimization-title">基于遗传算法的读出优化</h3><p class="project-meta">卡尔斯鲁厄理工学院 · 研究实习 · 2021 年 7—10 月</p>
